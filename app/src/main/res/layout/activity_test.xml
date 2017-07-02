@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.emobi.convoy.test.TestActivity">
+
+    <TextView
+        android:id="@+id/mywidget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:lines="1"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:textColor="#ff4500"
+        android:visibility="gone"
+        android:text="Simple application that shows how to use marquee, with a long text" />
+
+    <asia.ivity.android.marqueeview.MarqueeView
+        android:id="@+id/marqueeView100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do."
+            android:maxLines="1"
+            tools:ignore="HardcodedText"/>
+    </asia.ivity.android.marqueeview.MarqueeView>
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/web"
+        ></WebView>
+</LinearLayout>

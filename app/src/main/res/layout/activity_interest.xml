@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_interest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.emobi.convoy.activity.InterestActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="65dp"
+                android:text="Title"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_entertainment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/interest_option_non_selected"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="Entertainment"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_travelling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/interest_option_non_selected"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="Travelling"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/interest_option_non_selected"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="Family"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_study"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/interest_option_non_selected"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="Study"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_everything"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/interest_option_non_selected"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="Everything"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_gaming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/interest_option_non_selected"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="Gaming"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_sports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/interest_option_non_selected"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="Sports"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_technology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/interest_option_non_selected"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="Technology"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/interest_option_non_selected"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="Action"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_indoor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/interest_option_non_selected"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="Indoor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_outdoor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/interest_option_non_selected"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="Outdoor"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.emobi.convoy.activity.SignupActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_splash_draw" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:text="Craton"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Craton"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Craton is for coordinating groups of people who are"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="driving is seperate vehicles to the same destination."
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btn_login"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/ic_craton_button"
+                            android:text="login"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btn_sign_up"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/ic_craton_button"
+                            android:text="Sign Up"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="OR"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/iv_twitter"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_twitter_sign_in"/>
+                <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                    android:id="@+id/twitterLogin"
+                    android:layout_width="311dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/iv_fb"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:src="@drawable/ic_facebook"/>
+
+                <ImageView
+                    android:id="@+id/iv_google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="71dp"
+                    android:src="@drawable/ic_google_plus"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_signup_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:text="Or sign up using your email"/>
+
+            </LinearLayout>
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

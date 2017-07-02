@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Craton</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="facebook_app_id">1591394054207720</string>
+    <string name="agora_app_id">3e5946d9826945e4812ed78349cea22c</string>
+    <string name="pick_contacts">Pick contact(s)</string>
+    <string name="picked_contacts">Picked contact(s)</string>
+
+    <string name="permission_denied">Permission denied</string>
+    <string name="permission_denied_contacts">The contact picker won\'t work without this permission. Are you sure you want to deny this permission?</string>
+    <string name="permission_deny">Deny</string>
+    <string name="permission_retry">Re-try</string>
+
+    <string name="light_theme">Light Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-1163685788193118/4013909780</string>
+
+</resources>

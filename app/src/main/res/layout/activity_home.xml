@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:minHeight="?attr/actionBarSize">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ic_left_ham"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_ham" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Craton"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ic_right_ham"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_ham" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+            <!-- The main content view where fragments are loaded -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/search_result_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#1B2225"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/flContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <fragment
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.MapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <WebView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/web"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="30dp"></WebView>
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- The navigation drawer that comes from the left -->
+        <!-- Note that `android:layout_gravity` needs to be set to 'start' -->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nvView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#2D3D4A"
+            android:elevation="10dp"
+            android:fitsSystemWindows="true"
+            android:textAlignment="2"
+            android:textAppearance="?attr/menu"
+            app:itemTextColor="#FFFFFF"
+            app:menu="@menu/home_nav_drawer_items"
+            app:theme="@style/CustomScrollbar" />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nvView_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="#2D3D4A"
+            android:elevation="10dp"
+            android:fitsSystemWindows="true"
+            android:textAlignment="2"
+            android:textAppearance="?attr/menu"
+            app:theme="@style/CustomScrollbar" />
+
+    </android.support.v4.widget.DrawerLayout>
+</FrameLayout>
